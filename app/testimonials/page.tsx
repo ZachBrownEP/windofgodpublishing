@@ -23,7 +23,7 @@ export default function TestimonialsPage() {
       name: "Deborah P.",
       initial: "D",
       content:
-        "I so enjoyed the course. I was is inspired by Mary and her sharing with us the importance of allowing the Holy Spirit to lead in the process of writing. I am so glad that I can go over the teachings again because of the replays. This way I can watch again and get all I need. Thank you Mary.",
+        "I so enjoyed the course! I was inspired by Mary and her teaching on the importance of allowing the Holy Spirit to lead in the writing process. I’m grateful for the replays, which let me revisit the teachings and absorb everything I need. Thank you, Mary!",
     },
     {
       id: "shawna-h",
