@@ -31,6 +31,13 @@ export default function TestimonialsPage() {
       initial: "S",
       content: "I loved the worship music during the writing portion of the course.",
     },
+    {
+      id: "jennifer-rodriguez",
+      name: "Jennifer Rodriguez",
+      initial: "J",
+      content:
+        "Mary is an amazing consultant and guidance counselor through her publishing services. She was able to help me move my thoughts from writing into active publishing. She offers great avenues of publishing that will fit your personal need. She offers many key elements you can utilize to get you headed on the right path and even to completion if you take that full route. I love that she leaves it up to you on which route you want to take and still offers her assistance at a well-rounded capacity. Thank you Mary!!",
+    },
   ]
 
   return (
