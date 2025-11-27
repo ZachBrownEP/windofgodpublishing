@@ -175,8 +175,12 @@ export default function HomePage() {
                       </Button>
                     </Link>
                     <Link href="/store">
-                      <Button size="lg" variant="outline" className="border-blue-600 text-blue-700 hover:bg-blue-50">
-                        Enroll Now - $35
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-red-600 text-red-700 hover:bg-red-50 bg-red-50"
+                      >
+                        Black Friday Deal - $20
                       </Button>
                     </Link>
                   </div>
