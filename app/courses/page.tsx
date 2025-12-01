@@ -96,18 +96,6 @@ export default function CoursesPage() {
                 </p>
               </div>
 
-              <div className="mt-6 mb-4">
-                <div className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-3 rounded-lg">
-                  <div className="text-xs font-bold uppercase tracking-wide">Black Friday Deal!</div>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span className="text-xl font-bold">$20</span>
-                    <span className="text-sm line-through opacity-75">$35</span>
-                    <span className="bg-yellow-400 text-red-800 text-xs font-bold px-2 py-0.5 rounded">SAVE $15</span>
-                  </div>
-                  <div className="text-xs mt-1 opacity-90">Nov 27-30 only</div>
-                </div>
-              </div>
-
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center p-4 bg-white rounded-xl shadow-lg">
                   <BookOpen className="w-8 h-8 text-blue-600 mx-auto mb-2" />

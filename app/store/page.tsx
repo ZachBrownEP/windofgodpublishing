@@ -13,7 +13,7 @@ import { QuickViewModal } from "@/components/quick-view-modal"
 const webinarProduct = {
   id: "ready-set-write",
   title: "Ready. Set. Write!!!",
-  price: 20,
+  price: 35,
   image: "/images/ready-set-write-store.png",
   description:
     "A comprehensive webinar designed to help you overcome writer's block, develop your unique voice, and create compelling narratives that resonate with your audience.",
@@ -197,24 +197,18 @@ function StorePageContent() {
                     </div>
 
                     <div className="space-y-4">
-                      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-4 rounded-lg mb-4">
-                        <div className="text-sm font-bold uppercase tracking-wide mb-1">Black Friday Deal!</div>
-                        <div className="flex items-center gap-3">
-                          <span className="text-3xl font-bold">$20</span>
-                          <span className="text-lg line-through opacity-75">$35</span>
-                          <span className="bg-yellow-400 text-red-800 text-xs font-bold px-2 py-1 rounded">SAVE $15</span>
-                        </div>
-                        <div className="text-xs mt-2 opacity-90">Limited time: Nov 27-30</div>
+                      <div className="text-center mb-4">
+                        <span className="text-3xl font-bold text-blue-900">$35</span>
                       </div>
 
                       <div>
                         <Button
                           size="lg"
-                          className="bg-red-600 hover:bg-red-700 text-white w-full"
+                          className="bg-blue-600 hover:bg-blue-700 text-white w-full"
                           onClick={handleBuyNow}
                         >
                           <ShoppingCart className="w-4 h-4 mr-2" />
-                          Get Black Friday Deal
+                          Buy Now
                         </Button>
                       </div>
 
