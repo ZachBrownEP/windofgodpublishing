@@ -178,9 +178,9 @@ export default function HomePage() {
                       <Button
                         size="lg"
                         variant="outline"
-                        className="border-red-600 text-red-700 hover:bg-red-50 bg-red-50"
+                        className="border-blue-600 text-blue-700 hover:bg-blue-50"
                       >
-                        Black Friday Deal - $20
+                        Register Now - $35
                       </Button>
                     </Link>
                   </div>
