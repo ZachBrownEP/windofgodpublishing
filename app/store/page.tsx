@@ -10,6 +10,32 @@ import Link from "next/link"
 import { useCart } from "@/components/cart-context"
 import { QuickViewModal } from "@/components/quick-view-modal"
 
+const unstuckCourse = {
+  id: "unstuck",
+  title: "Unstuck: Breaking the Spiritual Resistance to Finish Your Book",
+  price: 37,
+  image: "/images/unstuck-course.jpg",
+  description:
+    "You didn't lose the call. You encountered resistance. If you started your book in obedience but now feel stuck, discouraged, or unsure how to move forward, this isn't a writing problem—it's a spiritual one.",
+  features: [
+    {
+      icon: <Clock className="w-5 h-5" />,
+      title: "Live + Replay Access",
+      description: "March 26, 2026 | Replays available",
+    },
+    {
+      icon: <BookOpen className="w-5 h-5" />,
+      title: "Short. Focused. Anointed.",
+      description: "15-20 minute lessons",
+    },
+    {
+      icon: <Download className="w-5 h-5" />,
+      title: "Finish Your Assignment",
+      description: "Step back into alignment",
+    },
+  ],
+}
+
 const webinarProduct = {
   id: "ready-set-write",
   title: "Ready. Set. Write!!!",
@@ -140,11 +166,107 @@ function StorePageContent() {
         </div>
       </section>
 
-      {/* Featured Webinar */}
+      {/* Featured Course - Unstuck */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold text-blue-900 mb-6">Featured Webinar</h2>
+            <h2 className="text-4xl font-serif font-bold text-blue-900 mb-6">Featured Course</h2>
+            <p className="text-lg text-blue-800 max-w-2xl mx-auto">
+              Break through spiritual resistance and finish your book
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <Card className="bg-white border-blue-100 hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="grid md:grid-cols-2 gap-0">
+                  <div className="relative overflow-hidden h-full">
+                    <Image
+                      src="/images/unstuck-course.jpg"
+                      alt="Unstuck: Breaking the Spiritual Resistance to Finish Your Book"
+                      width={500}
+                      height={500}
+                      className="w-full h-auto object-contain max-h-96"
+                    />
+                  </div>
+                  <div className="p-8 flex flex-col justify-between">
+                    <div>
+                      <div className="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">
+                        New Course
+                      </div>
+                      <h3 className="text-3xl font-serif font-bold text-blue-900 mb-2">Unstuck</h3>
+                      <p className="text-lg text-blue-800 mb-4">Breaking the Spiritual Resistance to Finish Your Book</p>
+                      <p className="text-blue-700 mb-4">
+                        You didn't lose the call. You encountered resistance.
+                      </p>
+                      <p className="text-blue-700 mb-4">
+                        If you started your book in obedience but now feel stuck, discouraged, or unsure how to move forward, this isn't a writing problem—it's a spiritual one.
+                      </p>
+                      <p className="text-blue-700 mb-6">
+                        This focused, Spirit-led mini-course will help you identify what's really blocking your manuscript, break agreement with delay, and realign with God's original instruction—so you can finish what He asked you to begin.
+                      </p>
+
+                      <div className="space-y-4 mb-8">
+                        <div className="flex items-start gap-3">
+                          <Clock className="w-5 h-5 text-blue-600 mt-1" />
+                          <div>
+                            <h4 className="font-medium text-blue-800">March 26, 2026</h4>
+                            <p className="text-blue-600 text-sm">12 PM HST | 3 PM PST | 6 PM EST</p>
+                            <p className="text-blue-600 text-sm">Live via Zoom | Replays available</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <BookOpen className="w-5 h-5 text-blue-600 mt-1" />
+                          <div>
+                            <h4 className="font-medium text-blue-800">Focused Content</h4>
+                            <p className="text-blue-600 text-sm">15-20 minute anointed lessons</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <Download className="w-5 h-5 text-blue-600 mt-1" />
+                          <div>
+                            <h4 className="font-medium text-blue-800">Spiritual Breakthrough</h4>
+                            <p className="text-blue-600 text-sm">Break through resistance and finish your book</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="text-center mb-4">
+                        <span className="text-3xl font-bold text-blue-900">$37</span>
+                      </div>
+
+                      <div>
+                        <Button
+                          size="lg"
+                          className="bg-blue-600 hover:bg-blue-700 text-white w-full"
+                          onClick={() => window.open("https://buy.stripe.com/unstuck-placeholder", "_blank", "noopener,noreferrer")}
+                        >
+                          <ShoppingCart className="w-4 h-4 mr-2" />
+                          Enroll Now
+                        </Button>
+                      </div>
+
+                      <Link href="/courses" passHref>
+                        <Button size="lg" variant="ghost" className="w-full text-blue-700 hover:bg-blue-50">
+                          Learn More
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Ready Set Write Webinar */}
+      <section className="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif font-bold text-blue-900 mb-6">On-Demand Webinar</h2>
             <p className="text-lg text-blue-800 max-w-2xl mx-auto">
               Take your writing to the next level with our signature webinar
             </p>
@@ -197,24 +319,18 @@ function StorePageContent() {
                     </div>
 
                     <div className="space-y-4">
-                      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-4 rounded-lg mb-4">
-                        <div className="text-sm font-bold uppercase tracking-wide mb-1">Black Friday Deal!</div>
-                        <div className="flex items-center gap-3">
-                          <span className="text-3xl font-bold">$20</span>
-                          <span className="text-lg line-through opacity-75">$35</span>
-                          <span className="bg-yellow-400 text-red-800 text-xs font-bold px-2 py-1 rounded">SAVE $15</span>
-                        </div>
-                        <div className="text-xs mt-2 opacity-90">Limited time: Nov 27-30</div>
+                      <div className="text-center mb-4">
+                        <span className="text-3xl font-bold text-blue-900">$35</span>
                       </div>
 
                       <div>
                         <Button
                           size="lg"
-                          className="bg-red-600 hover:bg-red-700 text-white w-full"
+                          className="bg-blue-600 hover:bg-blue-700 text-white w-full"
                           onClick={handleBuyNow}
                         >
                           <ShoppingCart className="w-4 h-4 mr-2" />
-                          Get Black Friday Deal
+                          Buy Now
                         </Button>
                       </div>
 

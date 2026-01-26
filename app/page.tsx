@@ -132,7 +132,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-900 mb-6">Featured Course</h2>
             <p className="text-lg text-blue-800 max-w-2xl mx-auto">
-              Start your writing journey with our comprehensive webinar
+              Break through spiritual resistance and finish your book
             </p>
           </div>
 
@@ -141,8 +141,8 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <Image
-                    src="/images/ready-set-write-store.png"
-                    alt="Ready Set Write Webinar"
+                    src="/images/unstuck-course.jpg"
+                    alt="Unstuck: Breaking the Spiritual Resistance to Finish Your Book"
                     width={400}
                     height={300}
                     className="rounded-lg shadow-md w-full"
@@ -150,21 +150,21 @@ export default function HomePage() {
                 </div>
                 <div>
                   <div className="inline-block bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold mb-4">
-                    On-Demand Webinar
+                    Live Mini-Course
                   </div>
-                  <h3 className="text-3xl font-serif font-bold text-blue-900 mb-4">Ready. Set. Write!!!</h3>
+                  <h3 className="text-3xl font-serif font-bold text-blue-900 mb-4">Unstuck</h3>
+                  <p className="text-lg text-blue-800 mb-2">Breaking the Spiritual Resistance to Finish Your Book</p>
                   <p className="text-blue-700 mb-6">
-                    Learn the fundamentals of writing your faith-based story with expert guidance from Mary E. Elam.
-                    This comprehensive webinar covers everything from getting started to overcoming writer's block.
+                    You didn't lose the call. You encountered resistance. If you started your book in obedience but now feel stuck, discouraged, or unsure how to move forward, this isn't a writing problem—it's a spiritual one. This focused, Spirit-led mini-course will help you identify what's really blocking your manuscript and realign with God's original instruction.
                   </p>
-                  <div className="flex items-center gap-6 mb-6">
-                    <div className="flex items-center gap-2">
-                      <Video className="w-5 h-5 text-blue-600" />
-                      <span className="text-blue-700">On-Demand Access</span>
-                    </div>
+                  <div className="flex flex-wrap items-center gap-4 mb-6 text-sm">
                     <div className="flex items-center gap-2">
                       <Clock className="w-5 h-5 text-blue-600" />
-                      <span className="text-blue-700">Lifetime Access</span>
+                      <span className="text-blue-700">March 26, 2026</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Video className="w-5 h-5 text-blue-600" />
+                      <span className="text-blue-700">Live via Zoom</span>
                     </div>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -178,9 +178,9 @@ export default function HomePage() {
                       <Button
                         size="lg"
                         variant="outline"
-                        className="border-red-600 text-red-700 hover:bg-red-50 bg-red-50"
+                        className="border-blue-600 text-blue-700 hover:bg-blue-50"
                       >
-                        Black Friday Deal - $20
+                        Enroll Now - $37
                       </Button>
                     </Link>
                   </div>

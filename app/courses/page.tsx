@@ -1,12 +1,20 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Play, Users, Clock, Star, ChevronRight, BookOpen, Heart, Lightbulb } from "lucide-react"
+import { CheckCircle, Play, Users, Clock, Star, ChevronRight, BookOpen, Heart, Lightbulb, Calendar, Video, MapPin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import Layout from "@/components/layout"
 
 export default function CoursesPage() {
+  const unstuckTopics = [
+    "Discern whether the resistance is fear, warfare, or timing",
+    "Reclaim spiritual authority over your manuscript",
+    "Break agreements with perfectionism and delay",
+    "Restore clarity, confidence, and peace",
+    "Move forward with obedience and momentum",
+  ]
+
   const courseTopics = [
     "Writing My Story - Where do I begin?",
     "How to partner with God to bring my story to life?",
@@ -19,7 +27,145 @@ export default function CoursesPage() {
 
   return (
     <Layout>
-      {/* Hero Section with Header Image as Background */}
+      {/* Featured Course - Unstuck */}
+      <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <Image
+                  src="/images/unstuck-course.jpg"
+                  alt="Unstuck: Breaking the Spiritual Resistance to Finish Your Book"
+                  width={500}
+                  height={500}
+                  className="rounded-2xl shadow-2xl w-full"
+                />
+              </div>
+              <div className="order-1 lg:order-2 text-white">
+                <Badge className="bg-yellow-500 text-blue-900 px-6 py-2 text-lg font-semibold mb-6">New Course</Badge>
+
+                <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight">
+                  Unstuck
+                </h1>
+                <h2 className="text-xl md:text-2xl text-blue-200 mb-6">
+                  Breaking the Spiritual Resistance to Finish Your Book
+                </h2>
+
+                <p className="text-lg text-blue-100 mb-4 leading-relaxed">
+                  You didn't lose the call. You encountered resistance.
+                </p>
+                <p className="text-lg text-blue-100 mb-6 leading-relaxed">
+                  If you started your book in obedience but now feel stuck, discouraged, or unsure how to move forward, this isn't a writing problem—it's a spiritual one.
+                </p>
+
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center gap-3">
+                    <Calendar className="w-5 h-5 text-yellow-400" />
+                    <span>March 26, 2026</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Clock className="w-5 h-5 text-yellow-400" />
+                    <span>12 PM HST | 3 PM PST | 6 PM EST</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Video className="w-5 h-5 text-yellow-400" />
+                    <span>Live via Zoom</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Play className="w-5 h-5 text-yellow-400" />
+                    <span>Replays Available</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/store">
+                    <Button
+                      size="lg"
+                      className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-10 py-4 text-lg font-semibold rounded-xl shadow-xl"
+                    >
+                      Enroll Now - $37
+                      <ChevronRight className="ml-2 w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Unstuck Course Details */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="max-w-4xl mx-auto space-y-6 text-xl text-blue-800 leading-relaxed">
+                <p>Fear of exposure.</p>
+                <p>Perfectionism.</p>
+                <p>Warfare against the assignment.</p>
+                <p>A quiet loss of confidence.</p>
+                <p className="mt-8">
+                  This focused, Spirit-led mini-course will help you identify what's really blocking your manuscript,
+                  break agreement with delay, and realign with God's original instruction—so you can finish what He asked you to begin.
+                </p>
+              </div>
+            </div>
+
+            <div className="mb-16">
+              <h2 className="text-3xl font-serif font-bold text-blue-900 mb-8 text-center">In this course, you will:</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {unstuckTopics.map((topic, index) => (
+                  <Card key={index} className="bg-gradient-to-br from-blue-50 to-white border-blue-100 hover:shadow-lg transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
+                          <CheckCircle className="w-5 h-5 text-white" />
+                        </div>
+                        <p className="text-blue-900 font-medium">{topic}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            <Card className="bg-gradient-to-br from-blue-900 to-blue-800 text-white">
+              <CardContent className="p-8 text-center">
+                <p className="text-lg mb-4">Short. Focused. Anointed.</p>
+                <p className="text-blue-200 mb-8">Each lesson is 15–20 minutes and designed to help you get unstuck—spiritually first, then practically.</p>
+
+                <p className="text-2xl font-serif italic mb-4">
+                  "The hands that laid the foundation will also finish it."
+                </p>
+                <p className="text-blue-200 mb-8">— Zechariah 4:9</p>
+
+                <p className="text-lg text-blue-100 mb-8">
+                  If your manuscript stalled, this is your invitation to step back into alignment and finish your assignment.
+                </p>
+
+                <Link href="/store">
+                  <Button
+                    size="lg"
+                    className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-10 py-4 text-lg font-semibold rounded-xl"
+                  >
+                    Enroll now and move forward with confidence
+                    <ChevronRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <section className="py-12 bg-gradient-to-r from-blue-100 via-yellow-100 to-blue-100">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-serif font-bold text-blue-900">More Courses</h2>
+        </div>
+      </section>
+
+      {/* Ready Set Write Hero Section */}
       <section
         className="relative py-20 bg-cover bg-center bg-no-repeat"
         style={{
@@ -32,7 +178,7 @@ export default function CoursesPage() {
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-blue-600 text-white px-6 py-2 text-lg font-semibold mb-6">Exclusive Webinar</Badge>
+            <Badge className="bg-blue-600 text-white px-6 py-2 text-lg font-semibold mb-6">On-Demand Webinar</Badge>
 
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
               Ready. Set. Write!!!
@@ -94,18 +240,6 @@ export default function CoursesPage() {
                   Join her as she teaches you how to allow God to speak through you in your writing and reach your
                   audience in a way that will change their lives. What are you waiting for? Sign up today.
                 </p>
-              </div>
-
-              <div className="mt-6 mb-4">
-                <div className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-3 rounded-lg">
-                  <div className="text-xs font-bold uppercase tracking-wide">Black Friday Deal!</div>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span className="text-xl font-bold">$20</span>
-                    <span className="text-sm line-through opacity-75">$35</span>
-                    <span className="bg-yellow-400 text-red-800 text-xs font-bold px-2 py-0.5 rounded">SAVE $15</span>
-                  </div>
-                  <div className="text-xs mt-1 opacity-90">Nov 27-30 only</div>
-                </div>
               </div>
 
               <div className="grid grid-cols-2 gap-6 mt-8">
