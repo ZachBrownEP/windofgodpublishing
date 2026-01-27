@@ -39,7 +39,7 @@ const unstuckCourse = {
 const webinarProduct = {
   id: "ready-set-write",
   title: "Ready. Set. Write!!!",
-  price: 20,
+  price: 35,
   image: "/images/ready-set-write-store.png",
   description:
     "A comprehensive webinar designed to help you overcome writer's block, develop your unique voice, and create compelling narratives that resonate with your audience.",
@@ -241,7 +241,7 @@ function StorePageContent() {
                         <Button
                           size="lg"
                           className="bg-blue-600 hover:bg-blue-700 text-white w-full"
-                          onClick={() => window.open("https://buy.stripe.com/unstuck-placeholder", "_blank", "noopener,noreferrer")}
+                          onClick={() => window.open("https://buy.stripe.com/bJe8wR8Nv3MwdG6geZ5Rm06", "_blank", "noopener,noreferrer")}
                         >
                           <ShoppingCart className="w-4 h-4 mr-2" />
                           Enroll Now

@@ -180,7 +180,7 @@ export default function HomePage() {
                         variant="outline"
                         className="border-blue-600 text-blue-700 hover:bg-blue-50"
                       >
-                        Enroll Now - $37
+Enroll Now - $37
                       </Button>
                     </Link>
                   </div>
