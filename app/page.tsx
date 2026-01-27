@@ -174,15 +174,15 @@ export default function HomePage() {
                         <ChevronRight className="ml-2 w-5 h-5" />
                       </Button>
                     </Link>
-                    <Link href="/store">
+                    <a href="https://buy.stripe.com/bJe8wR8Nv3MwdG6geZ5Rm06" target="_blank" rel="noopener noreferrer">
                       <Button
                         size="lg"
                         variant="outline"
                         className="border-blue-600 text-blue-700 hover:bg-blue-50"
                       >
-Enroll Now - $37
+                        Enroll Now - $37
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

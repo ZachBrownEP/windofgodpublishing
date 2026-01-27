@@ -78,7 +78,7 @@ export default function CoursesPage() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/store">
+                  <a href="https://buy.stripe.com/bJe8wR8Nv3MwdG6geZ5Rm06" target="_blank" rel="noopener noreferrer">
                     <Button
                       size="lg"
                       className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-10 py-4 text-lg font-semibold rounded-xl shadow-xl"
@@ -86,7 +86,7 @@ export default function CoursesPage() {
                       Enroll Now - $37
                       <ChevronRight className="ml-2 w-5 h-5" />
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function CoursesPage() {
                   If your manuscript stalled, this is your invitation to step back into alignment and finish your assignment.
                 </p>
 
-                <Link href="/store">
+                <a href="https://buy.stripe.com/bJe8wR8Nv3MwdG6geZ5Rm06" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
                     className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-10 py-4 text-lg font-semibold rounded-xl"
@@ -151,7 +151,7 @@ export default function CoursesPage() {
                     Enroll now and move forward with confidence
                     <ChevronRight className="ml-2 w-5 h-5" />
                   </Button>
-                </Link>
+                </a>
               </CardContent>
             </Card>
           </div>
